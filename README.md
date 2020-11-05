@@ -1,1 +1,1 @@
-# icecream-counter
+# Icecream Counter
