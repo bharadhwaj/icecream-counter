@@ -116,3 +116,7 @@ USE_TZ = True
 STATIC_URL = "/static/"
 
 AUTH_USER_MODEL = "users.User"
+
+SITE_HEADER = "Ice-cream Counter"
+
+INDEX_TITLE = "Recruiterbox"

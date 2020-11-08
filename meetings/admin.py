@@ -1,7 +1,12 @@
+from django.conf import settings
 from django.contrib import admin
 
 from .forms import DailyAttendancesForm
 from .models import Meeting, DailyAttendance
+
+
+admin.site.site_header = settings.SITE_HEADER
+admin.site.index_title = settings.INDEX_TITLE
 
 
 @admin.register(Meeting)
