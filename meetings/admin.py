@@ -5,8 +5,11 @@ from .forms import DailyAttendancesForm
 from .models import Meeting, DailyAttendance
 
 
-admin.site.site_header = settings.SITE_HEADER
-admin.site.index_title = settings.INDEX_TITLE
+if settings.SITE_HEADER:
+    admin.site.site_header = settings.SITE_HEADER
+
+if settings.INDEX_TITLE:
+    admin.site.index_title = settings.INDEX_TITLE
 
 
 @admin.register(Meeting)
